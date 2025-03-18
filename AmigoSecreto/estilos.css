@@ -1,0 +1,131 @@
+/* styles.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    /* Combinamos el degradado con una imagen de fondo */
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8)), 
+                url('Imagenes/secret-friend-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    z-index: 1; /* Asegura que el contenedor esté sobre el fondo */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.header-icon {
+    width: 40px;
+    height: 40px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.input-section {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5a6dd8;
+}
+
+.friends-list {
+    margin-bottom: 2rem;
+}
+
+.friends-list h2 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.friends-list ul {
+    list-style: none;
+}
+
+.friends-list li {
+    padding: 0.5rem;
+    background: #f5f5f5;
+    margin-bottom: 0.5rem;
+    border-radius: 5px;
+}
+
+.draw-button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.result {
+    text-align: center;
+}
+
+.result h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.result-icon {
+    width: 80px;
+    height: 80px;
+    margin: 1rem auto;
+    display: block;
+}
+
+.result p {
+    font-size: 1.2rem;
+    color: #667eea;
+    font-weight: bold;
+}

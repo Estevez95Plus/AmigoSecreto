@@ -1,0 +1,37 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo Secreto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="imagenes/gift-icon.svg" alt="Gift Icon" class="header-icon">
+            <h1>Amigo Secreto</h1>
+        </div>
+        
+        <div class="input-section">
+            <input type="text" id="friendName" placeholder="Ingresa un nombre">
+            <button onclick="addFriend()">Agregar</button>
+        </div>
+
+        <div class="friends-list" id="friendsList">
+            <h2>Lista de Amigos</h2>
+            <ul></ul>
+        </div>
+
+        <button class="draw-button" onclick="drawSecretFriend()">Sortear Amigo</button>
+
+        <div class="result" id="result">
+            <h2>¡Amigo Secreto!</h2>
+            <img src="imagenes/secret-friend.svg" alt="Secret Friend" class="result-icon">
+            <p id="secretFriend"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
